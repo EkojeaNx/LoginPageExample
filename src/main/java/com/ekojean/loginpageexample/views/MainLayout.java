@@ -1,12 +1,17 @@
 package com.ekojean.loginpageexample.views;
 
 import com.ekojean.loginpageexample.views.helloworld.HelloWorldView;
+import com.ekojean.loginpageexample.views.login.LoginErrorView;
+import com.ekojean.loginpageexample.views.login.LoginOneView;
+import com.ekojean.loginpageexample.views.login.LoginThreeView;
+import com.ekojean.loginpageexample.views.login.LoginTwoView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Header;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
@@ -51,12 +56,23 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
 
         nav.addItem(new SideNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Login 1", LoginOneView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Login 2", LoginTwoView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Login 3", LoginThreeView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Login Error", LoginErrorView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+
+
+
 
         return nav;
     }
 
     private Footer createFooter() {
         Footer layout = new Footer();
+
+        layout.add(
+            new HorizontalLayout(new H1("EkojeaN"))
+        );
 
         return layout;
     }
