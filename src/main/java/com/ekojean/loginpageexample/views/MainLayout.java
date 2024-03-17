@@ -3,7 +3,6 @@ package com.ekojean.loginpageexample.views;
 import com.ekojean.loginpageexample.views.helloworld.HelloWorldView;
 import com.ekojean.loginpageexample.views.login.LoginErrorView;
 import com.ekojean.loginpageexample.views.login.LoginOneView;
-import com.ekojean.loginpageexample.views.login.LoginThreeView;
 import com.ekojean.loginpageexample.views.login.LoginTwoView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -58,7 +57,6 @@ public class MainLayout extends AppLayout {
         nav.addItem(new SideNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
         nav.addItem(new SideNavItem("Login 1", LoginOneView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
         nav.addItem(new SideNavItem("Login 2", LoginTwoView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
-        nav.addItem(new SideNavItem("Login 3", LoginThreeView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
         nav.addItem(new SideNavItem("Login Error", LoginErrorView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
 
 

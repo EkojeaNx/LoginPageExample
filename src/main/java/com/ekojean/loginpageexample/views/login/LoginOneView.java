@@ -12,6 +12,13 @@ public class LoginOneView extends VerticalLayout {
 
         LoginForm loginForm = new LoginForm();
 
+        /* 
+        this.getElement().getStyle().set("background-image", "url('images/anasayfa.jpg')");
+        this.getElement().getStyle().set("background-repeat", "no-repeat");
+        this.getElement().getStyle().set("background-size", "cover");
+        this.getElement().getStyle().set("background-position", "center");
+        */
+
         setAlignItems(Alignment.CENTER);
         setJustifyContentMode(JustifyContentMode.CENTER);
 
